@@ -17,14 +17,14 @@ export const AmChart = React.forwardRef<any, any>((props, ref) => {
     const newChart: any = am4core.createFromConfig(config, id, chartTypeClass);
     newChart.data = config.data;
     setChart(newChart);
-  }
+  };
 
   const createChartFromFunction = () => {
     const newChart: any = am4core.create(id, chartTypeClass);
     newChart.data = config.data;
     createChart(newChart);
     setChart(newChart);
-  }
+  };
 
 
   useEffect(() => {
@@ -39,7 +39,7 @@ export const AmChart = React.forwardRef<any, any>((props, ref) => {
 
     return () => {
       if (chart) chart.dispose();
-    }
+    };
   }, [config]);
 
   const getChart = () => chart;

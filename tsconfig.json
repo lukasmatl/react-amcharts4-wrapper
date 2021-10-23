@@ -19,6 +19,6 @@
     "skipLibCheck": true,
     "types": [
     ],
-    "typeRoots": ["../node_modules/@types", "./typings"]
+    "typeRoots": ["./node_modules/@types", "./typings"]
   }
 }

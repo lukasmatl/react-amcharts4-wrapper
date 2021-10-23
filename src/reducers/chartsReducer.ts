@@ -1,5 +1,5 @@
-import {chartsActionTypes} from "../constants";
-import {assocDotPath} from "ramda-extension";
+import {chartsActionTypes} from '../constants';
+import {assocDotPath} from 'ramda-extension';
 
 export const chartsReducer = (initialState: any) => (state = initialState, action: any) => {
     switch (action.type) {
